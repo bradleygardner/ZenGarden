@@ -1,1 +1,28 @@
 //This is the start of our Sass file
+@mixin border{
+    border: 1px solid black;
+    padding: 10px;
+}
+.page-wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.sidebar{
+    grid-row: 1/2;
+    display:flex;
+}
+.main{
+    margin: 0 2em 0 2em;
+
+}
+.intro > header, .summary{
+    text-align: center;
+}
+.preamble, .explanation, .participation, .benefits, .requirements{
+    @include border;
+}
+footer{
+    @include border;
+    text-align: center;
+    margin:0 -2em 0 -2em;
+}
