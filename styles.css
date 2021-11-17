@@ -30,13 +30,33 @@ footer {
 }
 
 @media only screen and (min-width: 50em) {
-  .page-wrapper {
-    grid-template-columns: repeat(6, 1fr);
+  .intro header {
+    width: 315px;
+    height: 315px;
+    background: linear-gradient(yellow, orange, red);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .intro header h1, .intro header h2 {
+    margin: 60px;
+  }
+  .intro header h1 abbr, .intro header h2 abbr {
+    text-decoration: none;
   }
 
-  header, .summary {
-    border: 2px solid black;
-    border-radius: 10px;
+  .summary {
+    background-image: url(cloud3.svg);
+    background-size: 520px 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .summary p {
+    margin: 50px 0 0 0;
+    padding: 25px;
+  }
+
+  .page-wrapper {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .intro {
