@@ -27,6 +27,18 @@ footer{
     margin:0 -2em 0 -2em;
     width:100vw;
 }
+.preamble {
+  background-image: url(leaves.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main {
+  background-image: url(Trunk.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 @media only screen and (min-width: 50em) {
 
   .intro header {
