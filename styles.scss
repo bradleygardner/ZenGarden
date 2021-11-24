@@ -27,51 +27,141 @@ footer{
     margin:0 -2em 0 -2em;
     width:100vw;
 }
+// code to add leaves svg
 .preamble {
   background-image: url(leaves.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
+// code to add trunk svg
 .main {
   background-image: url(Trunk.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-@media only screen and (min-width: 50em) {
 
-  .intro header {
-    width: 315px;
-    height: 315px;
-    background: linear-gradient(yellow,orange, red);
+//code for sun
+.intro header {
+  width: 315px;
+  height: 315px;
+  background: linear-gradient(yellow,orange, red);
+  border-radius: 50%;
+  margin: 0 auto;
+  h1, h2 {
+    text-align: center;
     border-radius: 50%;
-    margin: 0 auto;
-    h1, h2 {
-      margin: 60px;
-      abbr {
-        text-decoration: none;
-      }
+    padding: 50px;
+  }
+    
+    abbr {
+      text-decoration: none;
     }
+  
+}
 
+//code for cloud
+.summary {
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 380px;
+  height: 230px;
+  box-shadow: lightgrey 10px 10px;
+  margin: 60px auto;
+  border-radius: 100px;
+  
+  p {
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
     
+  }
+  
+ 
+  
+  
+  
+}
 
-    
+.summary:after, .summary:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+  
+  
+}
+
+.summary:before {
+  width: 130px;
+  height: 130px;
+  top: -25px;
+  left: -80px;
+  
+ 
+
+}
+
+.summary:after {
+  width: 160px;
+  height: 160px;
+  top: -255px;
+  left: 55px;
+  
+
+}
+// code for nav cloud
+.sidebar {
+  background-color: #f2f2f2;
+  text-align: center;
+  width: 400px;
+  height: 230px;
+  box-shadow: lightgrey 10px 10px;
+  margin: 60px auto;
+  border-radius: 100px;
   
   }
+  
 
-  .summary {
-    background-image: url(cloud3.svg);
-    background-size: 520px 550px;
-    background-position: center;
-    background-repeat: no-repeat;
-    p {
-      margin: 50px 0 0 0;
-      padding: 25px;
-    }
-   
-    
-  }
+
+.sidebar:after, .sidebar:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+  
+  
+}
+
+.sidebar:before {
+  width: 130px;
+  height: 130px;
+  top: -25px;
+  left: 25px;
+  
+ 
+
+}
+
+.sidebar:after {
+  width: 160px;
+  height: 160px;
+  top: -50px;
+  right: 50px;
+  
+
+}
+
+
+@media only screen and (min-width: 50em) {
+
+  
+
+  
+ 
 
   .page-wrapper{
     grid-template-columns: repeat(6, 1fr);
@@ -133,3 +223,19 @@ footer{
     transform:rotateX(0deg) skewX(0deg);
   }
 }
+// sun code
+.intro header {
+  min-width: 300px;
+  min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+// cloud code
+  .summary {
+    min-width: 380px;
+  min-height: 230px;
+    max-width: 380px;
+    max-height: 230px;
+  }
+  
+
