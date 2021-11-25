@@ -18,33 +18,45 @@
 .summary {
   text-align: center;
 }
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-  @include border;
-}
+
 footer {
   @include border;
   text-align: center;
   margin: 0 -2em 0 -2em;
   width: 100vw;
 }
-// code to add leaves svg
+
+// code to add tree
 .preamble {
-  background-image: url(leaves.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position:relative;
+  border: solid 3px green;
+  border-radius: 40%;
+  padding-left: 3em;
+  padding-right: 3em;
+  height: 500px;
+  width: 80%;
+  background-color: green;
+  margin: 0 auto;
+  margin-bottom: -3em;
+  z-index: 100;
+  text-align: center;
+  box-shadow: 10px 15px darken($color: green, $amount: 10%);
+  h3 {
+    padding-top: 7em;
+  }
 }
-// code to add trunk svg
 .main {
-  background-image: url(Trunk.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+  border: brown 3px solid;
+  background-color: brown;
+  padding:2em;
+  padding-top: 3em;
+  width: 45%;
+  margin: 0 auto;
+  z-index: 1;
 }
+
+
 
 //code for sun
 .intro header {

@@ -17,15 +17,6 @@
   text-align: center;
 }
 
-.preamble,
-.explanation,
-.participation,
-.benefits,
-.requirements {
-  border: 1px solid black;
-  padding: 10px;
-}
-
 footer {
   border: 1px solid black;
   padding: 10px;
@@ -35,17 +26,33 @@ footer {
 }
 
 .preamble {
-  background-image: url(leaves.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+  border: solid 3px green;
+  border-radius: 40%;
+  padding-left: 3em;
+  padding-right: 3em;
+  height: 500px;
+  width: 80%;
+  background-color: green;
+  margin: 0 auto;
+  margin-bottom: -3em;
+  z-index: 100;
+  text-align: center;
+  box-shadow: 10px 15px #004d00;
+}
+.preamble h3 {
+  padding-top: 7em;
 }
 
 .main {
-  background-image: url(Trunk.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+  border: brown 3px solid;
+  background-color: brown;
+  padding: 2em;
+  padding-top: 3em;
+  width: 45%;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .intro header {
