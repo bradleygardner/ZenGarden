@@ -1,8 +1,18 @@
 //This is the start of our Sass file
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap');
 @mixin border {
   border: 1px solid black;
   padding: 10px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif", "Times New Roman", serif;
+}
+
+p, a {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -205,12 +215,36 @@ footer {
     min-height: 300px;
     max-width: 300px;
     max-height: 300px;
+    animation: sun 5s backwards linear infinite;
+    
+  }
+
+  @keyframes sun {
+    0% {
+      box-shadow: 5px 5px 5px yellow;
+    }
+    25% {
+    
+      box-shadow: 10px 10px 5px yellow;
+    }
+
+    50% {
+      box-shadow: 5px 5px 5px yellow;
+    }
+
+    75% {
+      box-shadow: 10px 10px 5px yellow;
+    }
+
+  100% {
+    box-shadow: 5px 5px 5px yellow;
+  }
   }
   // cloud code
   .summary {
-    min-width: 380px;
+    min-width: 420px;
     min-height: 230px;
-    max-width: 380px;
+    max-width: 420px;
     max-height: 230px;
   }
 }
