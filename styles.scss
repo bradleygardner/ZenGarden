@@ -1,5 +1,14 @@
 //This is the start of our Sass file
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap');
+
+//color-variables
+$snow: #FDF7FA;
+$davysgrey: #5C574F;
+$ferngreen: #427A3E;
+$brown: #61481E;
+$darkpastelgreen: #23BE35;
+$iceberg: #70ABD0;
+
 @mixin border {
   border: 1px solid black;
   padding: 10px;
@@ -91,11 +100,12 @@ footer {
 .summary {
   background-color: #f2f2f2;
   text-align: center;
-  width: 380px;
+  width: 390px;
   height: 230px;
   box-shadow: lightgrey 10px 10px;
   margin: 60px auto;
   border-radius: 100px;
+  padding: 5px;
 
   p {
     border-radius: 50%;
@@ -249,6 +259,7 @@ footer {
     min-height: 230px;
     max-width: 420px;
     max-height: 230px;
+   
   }
 }
 @keyframes swing {
