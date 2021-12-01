@@ -183,14 +183,10 @@ footer {
   }
   .sidebar {
     display: flex;
-    grid-column: 4/7;
+    grid-column: 4/6;
     grid-row: 2/2;
     justify-content: center;
     align-content: center;
-    transform-origin: top center;
-    animation: swing;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
   }
   .main {
     grid-column: 1/4;
@@ -208,6 +204,13 @@ footer {
     padding: 10px;
     padding-top: 150px;
     max-height: 600px;
+    transform-origin: top center;
+    animation: swing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .wrapper:hover{
+    animation-play-state: paused;
   }
   // sun code
   .intro header {
@@ -249,13 +252,13 @@ footer {
   }
 }
 @keyframes swing {
-  33% {
-    transform: rotateX(50deg) skewX(20deg);
+  0%{
+    transform: rotateX(-20deg) skewX(-10deg);
   }
-  66% {
-    transform: rotateX(-50deg) skewX(-20deg);
+  50% {
+    transform: rotateX(20deg) skewX(10deg);
   }
   100% {
-    transform: rotateX(0deg) skewX(0deg);
+    transform: rotateX(-20deg) skewX(-10deg);
   }
 }
