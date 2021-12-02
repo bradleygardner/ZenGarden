@@ -28,6 +28,13 @@ a {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+a:link {
+  color: black;
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -142,6 +149,8 @@ footer {
     margin-bottom: 0;
     margin-top: 0;
   }
+
+  
 }
 
 .summary:after,
@@ -199,6 +208,15 @@ footer {
   top: -50px;
   right: 50px;
 }
+
+.sidebar li {
+  list-style-type: none;
+  a:link {
+  text-decoration: none;
+  }
+}
+
+
 
 @media only screen and (min-width: 50em) {
   .page-wrapper {

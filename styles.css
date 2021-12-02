@@ -13,6 +13,13 @@ a {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
+a:link, #zen-participation a:link {
+  color: black;
+}
+a:link:hover, #zen-participation a:link:hover {
+  background-color: lightgrey;
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -174,6 +181,13 @@ footer {
   height: 160px;
   top: -50px;
   right: 50px;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+.sidebar li a:link {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 50em) {
