@@ -1,24 +1,30 @@
 //This is the start of our Sass file
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap");
 
 //color-variables
-$snow: #FDF7FA;
-$davysgrey: #5C574F;
-$ferngreen: #427A3E;
-$brown: #61481E;
-$darkpastelgreen: #23BE35;
-$iceberg: #70ABD0;
+$snow: #fdf7fa;
+$davysgrey: #5c574f;
+$ferngreen: #427a3e;
+$brown: #61481e;
+$darkpastelgreen: #23be35;
+$iceberg: #70abd0;
 
 @mixin border {
   border: 1px solid black;
   padding: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bree Serif", "Times New Roman", serif;
 }
 
-p, a {
+p,
+a {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
@@ -48,7 +54,7 @@ footer {
 // code to add tree
 .preamble {
   overflow: hidden;
-  position:relative;
+  position: relative;
   border: solid 3px green;
   border-radius: 40%;
   padding-left: 3em;
@@ -81,7 +87,10 @@ footer {
   max-width: 100%;
   margin: 5em;
 }
-.explanation, .participation, .benefits, .requirements {
+.explanation,
+.participation,
+.benefits,
+.requirements {
   position: relative;
   background-color: brown;
   border: brown 3px solid;
@@ -94,11 +103,9 @@ footer {
 footer {
   background-color: lightgreen;
   max-width: 100%;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
-
-
 
 //code for sun
 .intro header {
@@ -220,10 +227,13 @@ footer {
       margin-right: 5em;
     }
   }
-  .explanation, .participation, .benefits, .requirements {
+  .explanation,
+  .participation,
+  .benefits,
+  .requirements {
     margin: 0;
     text-align: left;
-    width: 100%
+    width: 100%;
   }
   .sidebar {
     display: flex;
@@ -254,7 +264,7 @@ footer {
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
-  .wrapper:hover{
+  .wrapper:hover {
     animation-play-state: paused;
   }
   // sun code
@@ -264,7 +274,6 @@ footer {
     max-width: 300px;
     max-height: 300px;
     animation: sun 5s backwards linear infinite;
-    
   }
 
   @keyframes cloud {
@@ -272,7 +281,6 @@ footer {
       box-shadow: 5px 5px 5px lightgrey;
     }
     25% {
-    
       box-shadow: 10px 10px 5px lightgrey;
     }
 
@@ -284,9 +292,9 @@ footer {
       box-shadow: 10px 10px 5px lightgrey;
     }
 
-  100% {
-    box-shadow: 5px 5px 5px lightgrey;
-  }
+    100% {
+      box-shadow: 5px 5px 5px lightgrey;
+    }
   }
 
   @keyframes sun {
@@ -294,7 +302,6 @@ footer {
       box-shadow: 5px 5px 5px yellow;
     }
     25% {
-    
       box-shadow: 10px 10px 5px yellow;
     }
 
@@ -306,9 +313,9 @@ footer {
       box-shadow: 10px 10px 5px yellow;
     }
 
-  100% {
-    box-shadow: 5px 5px 5px yellow;
-  }
+    100% {
+      box-shadow: 5px 5px 5px yellow;
+    }
   }
   // cloud code
   .summary {
@@ -317,11 +324,10 @@ footer {
     max-width: 420px;
     max-height: 230px;
     animation: cloud 10s backwards linear infinite;
-   
   }
 }
 @keyframes swing {
-  0%{
+  0% {
     transform: rotateX(-20deg) skewX(-10deg);
   }
   50% {

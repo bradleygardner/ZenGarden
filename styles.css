@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap");
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bree Serif", "Times New Roman", serif;
 }
 
-p, a {
+p,
+a {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
@@ -70,7 +76,10 @@ footer {
   margin: 5em;
 }
 
-.explanation, .participation, .benefits, .requirements {
+.explanation,
+.participation,
+.benefits,
+.requirements {
   position: relative;
   background-color: brown;
   border: brown 3px solid;
@@ -198,7 +207,10 @@ footer {
     margin-right: 5em;
   }
 
-  .explanation, .participation, .benefits, .requirements {
+  .explanation,
+.participation,
+.benefits,
+.requirements {
     margin: 0;
     text-align: left;
     width: 100%;
