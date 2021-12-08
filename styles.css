@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@500&display=swap");
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Bree Serif", "Times New Roman", serif;
 }
 
@@ -13,11 +10,15 @@ a {
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-a:link, #zen-participation a:link {
+a:link {
   color: black;
 }
-a:link:hover, #zen-participation a:link:hover {
+a:link:hover {
   background-color: lightgrey;
+}
+
+body {
+  background-color: #70abd0;
 }
 
 .page-wrapper {
@@ -31,7 +32,7 @@ a:link:hover, #zen-participation a:link:hover {
 }
 
 .main {
-  margin: 0 2em 0 2em;
+  margin: 0;
 }
 
 .intro > header,
@@ -43,44 +44,30 @@ footer {
   border: 1px solid black;
   padding: 10px;
   text-align: center;
-  margin: 0 -2em 0 -2em;
-  width: 100vw;
+  margin: 0 auto;
+  width: 92vw;
+  background-color: #23be35;
 }
 
 .preamble {
   overflow: hidden;
   position: relative;
-  border: solid 3px green;
+  border: solid 3px #427a3e;
   border-radius: 40%;
   padding-left: 3em;
   padding-right: 3em;
   height: 500px;
   width: 80%;
   max-width: 100vw;
-  background-color: green;
-  margin: auto;
+  background-color: #427a3e;
+  margin: 0 auto;
   margin-bottom: -3em;
   z-index: 100;
   text-align: center;
+  box-shadow: 10px 15px #30582d;
 }
 .preamble h3 {
   padding-top: 7em;
-}
-
-/*.main {
-  position: relative;
-  border: brown 3px solid;
-  background-color: brown;
-  padding:2em;
-  padding-top: 3em;
-  width: 45%;
-  margin:0 auto;
-  z-index: 1;
-  text-align: center;
-}*/
-.main {
-  max-width: 100%;
-  margin: 5em;
 }
 
 .explanation,
@@ -88,20 +75,16 @@ footer {
 .benefits,
 .requirements {
   position: relative;
-  background-color: brown;
-  border: brown 3px solid;
-  padding: 2em;
+  background-color: #61481e;
+  border: #61481e 3px solid;
+  padding-left: 3em;
+  padding-right: 3em;
   padding-top: 3em;
-  width: 100%;
-  margin: 0 auto;
+  max-width: 100vw;
+  margin: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
   z-index: 1;
-}
-
-footer {
-  background-color: lightgreen;
-  max-width: 100%;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
 }
 
 .intro header {
@@ -212,13 +195,9 @@ footer {
   }
 
   .preamble {
-    flex: 0 0 100%;
     border-radius: 0 40% 40% 0;
     text-align: left;
-    margin-right: 4em;
-  }
-  .preamble p {
-    margin-right: 5em;
+    width: 100vw;
   }
 
   .explanation,
@@ -239,8 +218,8 @@ footer {
   }
 
   .main {
-    grid-column: 1/4;
-    margin-left: 4em;
+    grid-column: 1/3;
+    margin-left: 0;
   }
 
   footer {
