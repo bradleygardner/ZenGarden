@@ -8,6 +8,7 @@ h3 {
 p,
 a {
   font-family: "Open Sans", Helvetica, sans-serif;
+  color: #1b1b18;
 }
 
 a:link {
@@ -90,7 +91,7 @@ footer {
 .intro header {
   width: 315px;
   height: 315px;
-  background: linear-gradient(yellow, orange, red);
+  background: linear-gradient(yellow, orange);
   border-radius: 50%;
   margin: 0 auto;
 }
