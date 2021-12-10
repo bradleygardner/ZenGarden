@@ -29,9 +29,91 @@ body {
 
 .sidebar {
   grid-row: 1/2;
-  display: flex;
+  overflow: hidden;
+  transition: all 1s;
 }
 
+@media screen and (max-width: 49em) {
+  .design-selection {
+    transition: all 1s;
+    overflow: hidden;
+    margin-top: -9em;
+  }
+  .design-selection .select {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .design-selection ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    transition: all 1s;
+    transform: translateY(-350px);
+    margin-bottom: -9em;
+  }
+  .design-selection:hover {
+    padding-bottom: 9em;
+  }
+  .design-selection:hover ul {
+    transform: translateY(0);
+  }
+
+  .design-archives {
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .design-archives .archives {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .design-archives ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    transition: all 1s;
+    transform: translateY(-150px);
+    margin-bottom: -2em;
+  }
+  .design-archives:hover {
+    padding-bottom: 2em;
+  }
+  .design-archives:hover ul {
+    transform: translateY(0);
+  }
+
+  .zen-resources {
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .zen-resources .resources {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .zen-resources ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    transition: all 1s;
+    transform: translateY(-200px);
+    overflow: hidden;
+    margin-bottom: -7em;
+  }
+  .zen-resources:hover {
+    padding-bottom: 7em;
+  }
+  .zen-resources:hover ul {
+    transform: translateY(0);
+  }
+}
 .main {
   margin: 0;
 }

@@ -30,8 +30,68 @@ body {
 }
 .sidebar {
   grid-row: 1/2;
-  display: flex;
+  overflow: hidden;
+  transition: all 1s;
 }
+// code for mobile sidebar 
+@media screen and (max-width: 49em){
+  .design-selection {
+    transition: all 1s;
+    overflow: hidden;
+    margin-top: -9em;
+    .select{
+      @include nav-button;
+    }
+    ul {
+      @include nav-mobile-style;
+      transform: translateY(-350px);
+      margin-bottom: -9em;
+    }
+    &:hover {
+      padding-bottom: 9em;
+      ul {
+        transform: translateY(0);
+      }
+    }
+  }
+  .design-archives {
+    transition: all 1s;
+    overflow: hidden;
+    .archives {
+      @include nav-button;
+    }
+    ul {
+       @include nav-mobile-style;
+       transform: translateY(-150px);
+       margin-bottom: -2em;
+     }
+    &:hover {
+      padding-bottom: 2em;
+      ul {
+        transform: translateY(0);
+      }
+    }
+  }
+  .zen-resources {
+    transition: all 1s;
+    overflow: hidden;
+    .resources {
+      @include nav-button;
+    }
+    ul {
+      @include nav-mobile-style;
+      transform: translateY(-200px);
+      overflow: hidden;
+      margin-bottom: -7em;
+    }
+    &:hover {
+      padding-bottom: 7em;
+      ul {
+        transform: translateY(0);
+      }
+    }
+  }
+  }
 .main {
   margin: 0;
 }
@@ -289,3 +349,4 @@ footer {
     transform: rotateX(-20deg) skewX(-10deg);
   }
 }
+
