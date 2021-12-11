@@ -310,15 +310,19 @@ footer {
     max-width: none;
   }
 
+  .sidebar {
+    overflow: visible;
+  }
+
   .wrapper {
-    border-left: 5px solid brown;
-    border-right: 5px solid brown;
+    border-left: 5px solid #61481e;
+    border-right: 5px solid #61481e;
     border-bottom: 20px solid yellow;
     border-radius: 0 0 10px 10px;
     margin: 20px;
     padding: 10px;
-    padding-top: 150px;
-    max-height: 600px;
+    padding-top: 100px;
+    max-height: 35%;
     transform-origin: top center;
     animation: swing;
     animation-duration: 10s;

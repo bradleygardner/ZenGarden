@@ -116,7 +116,7 @@ footer {
 .intro header {
   width: 315px;
   height: 315px;
-  background: linear-gradient(yellow, orange);
+  background: linear-gradient($yellow, orange);
   border-radius: 50%;
   margin: 0 auto;
   h1,
@@ -173,16 +173,6 @@ footer {
   top: -255px;
   left: 55px;
 }
-// code for nav cloud
-// .sidebar {
-//   background-color: #f2f2f2;
-//   text-align: center;
-//   width: 400px;
-//   height: 230px;
-//   box-shadow: lightgrey 10px 10px;
-//   margin: 60px auto;
-//   border-radius: 100px;
-// }
 
 .sidebar:after,
 .sidebar:before {
@@ -262,15 +252,18 @@ footer {
     margin: 0;
     max-width: none;
   }
+  .sidebar {
+    overflow: visible;
+  }
   .wrapper {
-    border-left: 5px solid brown;
-    border-right: 5px solid brown;
-    border-bottom: 20px solid yellow;
+    border-left: 5px solid $brown;
+    border-right: 5px solid $brown;
+    border-bottom: 20px solid $yellow;
     border-radius: 0 0 10px 10px;
     margin: 20px;
     padding: 10px;
-    padding-top: 150px;
-    max-height: 600px;
+    padding-top: 100px;
+    max-height: 35%;
     transform-origin: top center;
     animation: swing;
     animation-duration: 10s;
@@ -311,22 +304,22 @@ footer {
 
   @keyframes sun {
     0% {
-      box-shadow: 7px 7px 5px yellow;
+      box-shadow: 7px 7px 5px $yellow;
     }
     25% {
-      box-shadow: 10px 10px 5px yellow;
+      box-shadow: 10px 10px 5px $yellow;
     }
 
     50% {
-      box-shadow: 7px 7px 5px yellow;
+      box-shadow: 7px 7px 5px $yellow;
     }
 
     75% {
-      box-shadow: 10px 10px 5px yellow;
+      box-shadow: 10px 10px 5px $yellow;
     }
 
     100% {
-      box-shadow: 7px 7px 5px yellow;
+      box-shadow: 7px 7px 5px $yellow;
     }
   }
   // cloud code
